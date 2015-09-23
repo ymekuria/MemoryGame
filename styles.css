@@ -1,0 +1,217 @@
+body {
+    background-image: url("images/brownBackground.jpg"); 
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+   	font-family: "Museo Sans","Lucida Grande",Arial,sans-serif;
+    font-size: 34px;
+    line-height: 24px;
+    color: #615A58;
+    text-align: justify;   
+}
+
+button {
+   background-color:#F1693C;
+   color: #FEFAF8; 
+   border-radius: 3px;
+   font-size: 75%;
+   width: 15%;  
+}
+
+#squareNumDisplay {
+    background-color: #91827E;
+    display: inline-block;
+    border-color: #65493F;
+    float: right;
+    width: 7%;
+    height: 10%;
+    padding: .9%;
+    border-width: 1px;
+    border-style: solid;
+}
+
+#trialDisplay {
+    background-color: #91827E;
+    display: inline-block;
+    border-color: #65493F;
+    float: right;
+    width: 9%;
+    height: 10%; 
+    padding: .9%;
+    border-width: 1px;
+    border-style: solid;
+}
+
+#scoreDisplay {
+    background-color: #91827E;
+    display: inline-block;
+    border-color: #65493F;
+    float: right;
+    width: 9%;
+    height: 10%;
+    margin-right: 3%;
+    padding: .9%;
+    border-width: 1px;
+    border-style: solid;
+}
+
+#scoreDisplay > div {
+    display: inline-block;
+}
+
+
+#stats {
+    background-color: #714A43;
+    width:30%;
+    height:27%;
+    position: fixed;
+    top: 25%;
+    left: 33%;
+    padding: 2%;
+    font-size: 55%;
+    border-width: 50px solid;
+    border-color: #65493F;
+    display: none;       
+}
+
+
+#bonus {
+    display: none;
+    float: right;
+    width: 9%;
+    height: 10%;
+    margin-right: 3%;
+    padding: .9%;
+    font-size: 55%;
+    color: #FEFAF8;
+    font-family: "Museo Sans","Lucida Grande",Arial,sans-serif;
+    clear: both;     
+}
+
+#levelUp {
+    display: none;
+    float: right;
+    width: 7%;
+    height: 10%;
+    padding: .9%;  
+    font-size: 55%;
+    color: #FEFAF8;
+    margin-right: 12%;
+    font-family: "Museo Sans","Lucida Grande",Arial,sans-serif;
+    clear: left;    
+}
+
+#levelDown {
+    display: none;
+    float: right;
+    width: 7%;
+    height: 10%;
+    padding: .9%;  
+    font-size: 55%;
+    color: #FEFAF8;
+    margin-right: 25.5%;
+    font-family: "Museo Sans","Lucida Grande",Arial,sans-serif;
+    clear: both;      
+}
+
+#clickPrompt {
+    float: left;
+    margin-right: auto;
+    display: none;
+    position: fixed;
+    bottom: 0%;
+    width: 75%;
+    height: 12%;
+    margin-left: 29%;
+    padding: .9%;
+    clear: both;
+    font-size: 55%;
+    color: #FEFAF8;
+    font-family: "Museo Sans","Lucida Grande",Arial,sans-serif;  
+}
+
+#start {
+    background-color: #714A43;
+    width: 43%;
+    height: 15%;
+    position: fixed;
+    top: 25%;
+    left: 27%;
+    padding: 2%;
+    font-size: 55%;
+    border-size: 4em solid;
+    border-color: #65493F;
+    text-align: center;
+    display: none;  
+}
+
+.gameSquare {
+    display:inline-block;
+    color: #714A43;
+    vertical-align: top;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #3B2B26;
+}
+
+.gameBoard {
+    display: block;
+    margin-left: 30%;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 2em;
+    border-color: #3B2B26; 
+    float: left;
+}
+
+.startButton { 
+   text-align: center;
+   vertical-align: center;
+   background-color:#F1693C;
+   color: #FEFAF8; 
+   border-radius: 3px;
+   font-size: 75%;
+   width: 25%;   
+}
+
+.wrapper {
+    border-size: 4em solid;
+    border-color: #65493F;
+    border-width: 50px;
+}
+
+.text {
+    float: left;
+    font-size: 50%;
+    color: #412F2A;
+    font-family: "Museo Sans","Lucida Grande",Arial,sans-serif;
+}
+
+.lost {
+  position: fixed; 
+  top: 50%;
+  left: 50%;
+  margin-top: -320px;
+  margin-left: -240px;
+  display: none;  
+}
+
+.statsTop,
+.playAgainWrapper {
+   text-align: center;
+}
+
+.statWrapper {
+    text-align: center;
+    font-size: 100%;
+}
+
+.statsText {
+    font-family: "Museo Sans","Lucida Grande",Arial,sans-serif;
+    font-size: 100%;
+    color: #FEFAF8;
+}
+
+
+
+

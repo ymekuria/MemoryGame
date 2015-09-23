@@ -1,0 +1,112 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <title>Memory</title>
+        <meta name="Memory" content="Memory Game">
+      <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+            
+            <!--This displays the score, level and number of trials in the upper right-hand corner.-->
+            <div class="allDisplays">
+                <div id="scoreDisplay">
+                    <div class="text">SCORE&nbsp&nbsp</div>
+                    <div id='score' class="text">0</div>    
+                      
+                </div>
+                <div id="trialDisplay">
+                    <div class="text">TRIAL&nbsp&nbsp</div>
+                    <div id='trial' class="text"></div>  
+                </div>
+                <div id="squareNumDisplay">
+                    <div class="text">SQUARES&nbsp&nbsp</div>
+                    <div id='square' class="text"></div>  
+                </div>
+            </div>
+
+            <!--This displays the bonus points underneath the score display after awarded.-->
+            <div id="bonus"></div>
+
+            <!--These two indicate on the screen if a level is increased or decreased.-->
+            <div id="levelUp"></div>
+            <div id="levelDown"></div>
+
+            <!--This shows how many guess a player has left in a level after a wrong guess.-->
+            <div id="clickPrompt"></div>
+            
+                           
+
+           <!--The audio clips used throughtout the game-->
+           <audio id="intro" preload="auto">
+                <source src="sounds/pushit.mp3"></source>
+           </audio>
+           <audio id="soreLoser" preload="auto">
+                <source src="sounds/catScream.mp3"></source>
+           </audio>
+           <audio id="showSquares" preload="auto">
+                <source src="sounds/showSquares.mp3"></source>
+           </audio>
+
+           <audio id="bonusClip" preload="auto">
+                <source src="sounds/bonusClip.mp3"></source>
+           </audio>
+           <audio id="loseClip" preload="auto">
+                <source src="sounds/sadTrombone.mp3"></source>
+           </audio>
+           <audio id="correctClick" preload="auto">
+                <source src="sounds/correctClick.wav"></source>
+           </audio>
+           <audio id="wrongClick" preload="auto">
+                <source src="sounds/wrongClick.mp3"></source>
+           </audio>
+           <audio id="outro" preload="auto">
+                <source src="sounds/bestAround.mp3"></source>
+           </audio>
+
+    
+            <!--This is the start page-->
+            <div id="start">
+                <div class="statsText"><text class="statsText" id="introPrompt"></text>SCORE POINTS BY CLICKING THE SQUARES THAT WERE HIGHLIGHTED AFTER THEY DISAPPEAR. WOULD YOU LIKE TO PLAY?</div>
+                <br> 
+                    <button id="startYes" class="startButton">Yes</button>&nbsp&nbsp&nbsp&nbsp<button id="startNo" class="startButton">No</button>
+                </div>
+           </div>    
+            
+ <!--This is what's shown to the user after they finish playing-->
+           <div class="wrapper"> 
+            <div id="stats">
+                <div class="statWrapper">
+                    <div class="statsText">YOU SURE ARE SMART!</div>
+                    <br>
+                </div>    
+                    <div class="statsText">SCORE&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<text id="finalScore" ></text></div>
+                    <div class="statsText">SQUARES&nbsp&nbsp&nbsp<text id="highestSquare"></text></div>
+                    <br>
+                    <div class="playAgainWrapper">
+                      <div id="playAgain" class="statsText" >Would you like to play again?
+                         <br><br>
+                         <button id="reStartYes" class="startButton">Yes</button>&nbsp&nbsp&nbsp&nbsp<button id="reStartNo" class="startButton">No</button>
+                          
+                      </div>
+                    </div>
+           </div>
+        </div>
+
+        
+        <div class="loser">
+                <img class = "lost" src="images/trumpYourCat.jpg" alt="Trump Your Cat" style="width:128px;height:128px"></img>
+        </div>    
+        
+        <div class="gameBoard"></div>
+    </body>
+    <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>-->   
+    <script type="text/javascript" src="jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="underscore1.8.3.js"></script>
+
+    <script type="text/javascript" src="y.js"></script>
+    <script type="text/javascript" src="helperFuncs.js"></script> 
+    <!--<script type="text/javascript" src="2_reduceIntro.js"></script>-->
+    <script type="text/javascript" src="memory.js"></script>
+
+</html>
