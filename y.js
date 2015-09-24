@@ -46,17 +46,25 @@ var y = {
 	},
 	
 	//Creates a single result from a collection
-	reduce: function(collection, acumulator,start){
+	reduce: function(collection, acumulator, start) {
 		
-		//If a start isn't passed in, acumulated is initially set to zero
-		var acumulated = arguments.length > 2 ? start : 0;
-
-		//Iterate through the collection and invoke acumulator with the current item and the accumulated value
-		y.each(collection,function(current) {
-			acumulated = acumulator(acumulated, current);
-		});
-		return acumulated;	
-	},
+			//Checking if start is passed to the function
+			var noStart = arguments.length < 3; 
+			console.log(noStart)	
+			//Iterate over a collection.
+			y.each(collection, function(current, index, collection) {
+				if(noStart){
+					noStart = false;
+					start = current;	
+				}
+				
+				else {
+					start = acumulator(start, current)	
+				}	
+			});			
+			return start;
+		},	
+	
 
    //Returns true if every item in a collection passes the predicate
 	every: function(collection, predicate) {
@@ -86,4 +94,5 @@ var y = {
 		return max;
 	}
 };	
+
 
