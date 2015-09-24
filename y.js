@@ -16,7 +16,7 @@ var y = {
 		//If not, use a for in loop to iterate
 		else {
 			for(var key in collection){
-				cb(collection[i], i, collection);
+				cb(collection[key], key, collection);
 			}
 		}
 	},
